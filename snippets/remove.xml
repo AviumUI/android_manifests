@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Build -->
+    <remove-project name="LineageOS/android_build" />
+    <remove-project name="LineageOS/android_build_soong" />
+
+    <!-- Frameworks -->
+    <remove-project name="LineageOS/android_frameworks_base" />
+
+    <!-- Packages -->
+    <remove-project name="LineageOS/android_packages_apps_Nfc" />
+    <remove-project name="LineageOS/android_packages_apps_Messaging" />
+    <remove-project name="LineageOS/android_packages_apps_Settings" />
+    <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
+
+
+</manifest>
