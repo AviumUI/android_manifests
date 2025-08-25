@@ -4,18 +4,17 @@
 <h3 align="center">Sunward wings etch freedom on the dawn.</h3>
 
 ---
-**English** | [CN](README_CN.mkdn) 
 
-> ### Refined Android Experience
+> ### 更进一步的”Android+“体验
 
-**AviumUI** is a meticulously crafted interface layer based on LineageOS/AOSP, delivering a polished "stock-Android-plus" experience. We focus on thoughtful enhancements to core functionality while preserving Android's fundamental purity and performance.
+**AviumUI** 是基于 LineageOS/AOSP 的项目，提供优雅的「类原生增强版」体验。我们旨在提供在国内更棒的本地化，同时保持Android的纯粹本质与体验。
 
-##  ✨ Design Principles
+##  ✨  不断更新
 
-- **Essence Preservation**: Maintain Android's core integrity while refining the experience
-- **Purpose-Driven Enhancements**: Only meaningful additions that solve real user needs
+- **本质保留**：在优化体验的同时维护Android的核心体验
+- **目标驱动增强**：仅添加 **目标驱动功能+**：励志打造出”本地化+++“的体验
 
-##  📥 Getting Started
+##  📥  Get it！
 
 ### To Sync ###
 
@@ -38,4 +37,3 @@ lunch lineage_$devive-bp1a-userdebug
 
 # To build
 m bacon -j$(nproc --all)
-```
