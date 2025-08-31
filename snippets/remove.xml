@@ -17,5 +17,4 @@
     <remove-project name="LineageOS/android_packages_apps_Settings" />
     <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
 
-
 </manifest>
