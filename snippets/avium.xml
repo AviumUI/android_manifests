@@ -9,6 +9,9 @@
 
     <project path="android" name="android_manifests" remote="avium" />
 
+    <!-- Bootable -->
+    <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="avium" />
+
     <!-- Build -->
     <project path="build/make" name="android_build" groups="pdk,sysui-studio" remote="avium" >
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />

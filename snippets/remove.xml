@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+    <!-- Bootable -->
+    <remove-project name="LineageOS/android_bootable_recovery" />
+
     <!-- Build -->
     <remove-project name="LineageOS/android_build" />
     <remove-project name="LineageOS/android_build_soong" />
