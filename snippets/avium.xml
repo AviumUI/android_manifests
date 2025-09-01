@@ -44,6 +44,7 @@
     <project path="packages/apps/MoonWidget" name="android_packages_apps_MoonWidget" remote="avium" />
     <project path="packages/apps/ExthmUseful" name="android_packages_apps_ExthmUseful" remote="avium" />
     <project path="packages/apps/SystemUITools" name="android_packages_apps_SystemUITools" remote="avium" />
+    <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="avium" />
 
     <!-- Vendor -->
     <project path="vendor/lineage" name="android_vendor_lineage" remote="avium" />
