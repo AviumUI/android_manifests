@@ -8,6 +8,9 @@
     <remove-project name="LineageOS/android_build" />
     <remove-project name="LineageOS/android_build_soong" />
 
+    <!-- Device -->
+    <remove-project name="LineageOS/android_device_lineage_sepolicy" />
+    
     <!-- Frameworks -->
     <remove-project name="LineageOS/android_frameworks_base" />
 
