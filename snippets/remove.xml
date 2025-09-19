@@ -7,7 +7,7 @@
     <!-- Build -->
     <remove-project name="LineageOS/android_build" />
     <remove-project name="LineageOS/android_build_soong" />
-
+    
     <!-- Frameworks -->
     <remove-project name="LineageOS/android_frameworks_base" />
 

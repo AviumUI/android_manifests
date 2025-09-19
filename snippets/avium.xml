@@ -27,6 +27,9 @@
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
     </project>
 
+    <!-- Device -->
+    <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy"  remote="avium" />
+
     <!-- Frameworks -->
     <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="avium" />
 
