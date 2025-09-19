@@ -38,6 +38,7 @@
     <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc" remote="avium" />
     <project path="packages/apps/SetupWizard" name="android_packages_apps_SetupWizard" remote="avium" />
     <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="avium" />
+    <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="avium" />
     <project path="packages/apps/Via" name="android_packages_apps_Via" remote="avium" />
     <project path="packages/apps/MoonOCR" name="android_packages_apps_MoonOCR" remote="avium" />
     <project path="packages/apps/FeatureSettings" name="android_packages_apps_FeatureSettings" remote="avium" />
