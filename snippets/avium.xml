@@ -51,6 +51,9 @@
     <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="avium" />
     <project path="packages/apps/AviumLockscreenEdit" name="android_packages_apps_AviumLockscreenEdit" remote="avium" />
 
+    <!-- external -->
+    <project path="external/blurview" name="android_external_blurview" remote="avium" />
+
     <!-- Vendor -->
     <project path="vendor/lineage" name="android_vendor_lineage" remote="avium" />
     <project path="vendor/avium" name="android_vendor_avium" remote="avium" />
