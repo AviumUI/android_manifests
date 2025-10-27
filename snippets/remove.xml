@@ -12,9 +12,9 @@
     <remove-project name="LineageOS/android_frameworks_base" />
 
     <!-- Packages -->
-    <remove-project name="LineageOS/android_packages_apps_Nfc" />
     <remove-project name="LineageOS/android_packages_apps_Messaging" />
     <remove-project name="LineageOS/android_packages_apps_Settings" />
     <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
+    <remove-project name="LineageOS/android_packages_modules_Nfc" />
 
 </manifest>
