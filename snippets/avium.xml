@@ -32,6 +32,7 @@
 
     <!-- Frameworks -->
     <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="avium" />
+    <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="avium" />
 
     <!-- Packages -->
     <project path="packages/apps/AviumSetup" name="packages_apps_AviumSetup" remote="avium" />
