@@ -26,6 +26,53 @@ repo init -u https://github.com/AviumUI/android_manifests -b avium-16 --git-lfs
 # Sync
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
+### To Start ###
+We are fully compatible with the Lineage device tree. You can directly sync the Lineage device applicable to this device. We have some special configs; you can add the mk file "avium-common.mk" to your tree and include it. Below is an introduction to the different attributes of this config.
+```
+$(call inherit-product, vendor/avium/config/avium.mk)
+
+AVIUM_BUILDTYPE = Unoffical
+AVIUM_VERSION_APPEND_TIME_OF_DAY = false
+
+# GMS
+WITH_GMS ?= false
+# GMS_TYPE has two options: FULL and CORE
+# If WITH_GMS is true and GMS_TYPE is not set, it will default to CORE
+GMS_TYPE ?= CORE
+
+# LatinIMEGooglePrebuilt
+# If WITH_GMS is true, TARGET_INCLUDE_GOOGLEIME and TARGET_GOOGLEIME_OVERRIDE_IME will be forced to true
+TARGET_INCLUDE_GOOGLEIME ?= false
+TARGET_GOOGLEIME_OVERRIDE_IME ?= false
+
+//It will display on the Setting-AboutPhone
+AVIUM_MAINTAINER = Your_Name
+```
+Such as
+```
+$(call inherit-product, vendor/avium/config/avium.mk)
+
+AVIUM_BUILDTYPE = Unoffical
+AVIUM_VERSION_APPEND_TIME_OF_DAY = false
+
+# GMS
+WITH_GMS = true
+# GMS_TYPE has two options: FULL and CORE
+# If WITH_GMS is true and GMS_TYPE is not set, it will default to CORE
+GMS_TYPE = CORE
+
+# LatinIMEGooglePrebuilt
+# If WITH_GMS is true, TARGET_INCLUDE_GOOGLEIME and TARGET_GOOGLEIME_OVERRIDE_IME will be forced to true
+TARGET_INCLUDE_GOOGLEIME = true
+TARGET_GOOGLEIME_OVERRIDE_IME = true
+
+AVIUM_MAINTAINER = AVIUM_SHOWHOW
+```
+and add this in your device_tree
+```
+include device/(product)/(codename)/avium_common.mk
+```
+
 
 ### To Build ###
 
