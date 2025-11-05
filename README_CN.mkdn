@@ -29,16 +29,14 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ### To Start ###
 我们完全兼容 LineageOS 的设备树。您可以直接同步适用于该设备的 LineageOS 设备源码。我们提供了一些特殊配置：您只需将 avium-common.mk 文件添加到您的源码树中并引用即可。以下是该配置文件中各项属性的说明：
 ```
-$(call inherit-product, vendor/avium/config/avium.mk)
-
-AVIUM_BUILDTYPE = Unoffical
-AVIUM_VERSION_APPEND_TIME_OF_DAY = false
+AVIUM_BUILDTYPE := Unoffical
+AVIUM_VERSION_APPEND_TIME_OF_DAY := false
 
 # GMS
 WITH_GMS ?= false
-# GMS_TYPE has two options: FULL and CORE
-# If WITH_GMS is true and GMS_TYPE is not set, it will default to CORE
-GMS_TYPE ?= CORE
+# TARGET_GMS_TYPE has three options: FULL, MINI, and PICO
+# If WITH_GMS is true and TARGET_GMS_TYPE is not set, it will default to MINI
+TARGET_GMS_TYPE ?= MINI
 
 # LatinIMEGooglePrebuilt
 # If WITH_GMS is true, TARGET_INCLUDE_GOOGLEIME and TARGET_GOOGLEIME_OVERRIDE_IME will be forced to true
@@ -46,27 +44,22 @@ TARGET_INCLUDE_GOOGLEIME ?= false
 TARGET_GOOGLEIME_OVERRIDE_IME ?= false
 
 # 此信息将显示在“设置”->“关于手机”中
-AVIUM_MAINTAINER = Your_Name
+AVIUM_MAINTAINER := Your_Name
 ```
 例如：
 ```
-$(call inherit-product, vendor/avium/config/avium.mk)
-
-AVIUM_BUILDTYPE = Unoffical
-AVIUM_VERSION_APPEND_TIME_OF_DAY = false
+AVIUM_BUILDTYPE := Unoffical
+AVIUM_VERSION_APPEND_TIME_OF_DAY := false
 
 # GMS
-WITH_GMS = true
-# GMS_TYPE has two options: FULL and CORE
-# If WITH_GMS is true and GMS_TYPE is not set, it will default to CORE
-GMS_TYPE = CORE
+WITH_GMS := true
+TARGET_GMS_TYPE := MINI
 
-# LatinIMEGooglePrebuilt
-# If WITH_GMS is true, TARGET_INCLUDE_GOOGLEIME and TARGET_GOOGLEIME_OVERRIDE_IME will be forced to true
-TARGET_INCLUDE_GOOGLEIME = true
-TARGET_GOOGLEIME_OVERRIDE_IME = true
+# Google IME
+TARGET_INCLUDE_GOOGLEIME := true
+TARGET_GOOGLEIME_OVERRIDE_IME := true
 
-AVIUM_MAINTAINER = AVIUM_SHOWHOW
+AVIUM_MAINTAINER := AVIUM_SHOWHOW
 ```
 并在您的设备树（device tree）中添加以下内容：
 ```
@@ -81,7 +74,7 @@ include device/(product)/(codename)/avium_common.mk
 . build/envsetup.sh
 
 # Choose a target
-lunch lineage_$devive-bp2a-userdebug
+lunch lineage_$device-bp2a-userdebug
 
 # To build
 m bacon -j$(nproc --all)
