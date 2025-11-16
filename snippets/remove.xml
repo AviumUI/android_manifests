@@ -20,4 +20,7 @@
     <remove-project name="LineageOS/android_packages_apps_Settings" />
     <remove-project name="LineageOS/android_packages_modules_Nfc" />
 
+    <!-- System -->
+    <remove-project name="LineageOS/android_system_core"/>
+
 </manifest>

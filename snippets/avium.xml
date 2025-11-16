@@ -59,6 +59,9 @@
     <project path="packages/apps/PocketMode" name="android_packages_apps_PocketMode" remote="avium" />
     <project path="packages/modules/Nfc" name="android_packages_modules_Nfc" groups="apps_nfc,pdk-fs,pdk-cw-fs" remote="avium" />
 
+    <!-- System -->
+    <project path="system/core" name="android_system_core" groups="pdk" remote="avium" />
+
     <!-- external -->
     <project path="external/blurview" name="android_external_blurview" remote="avium" />
 
