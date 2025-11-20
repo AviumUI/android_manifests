@@ -7,6 +7,10 @@
         sync-j="4"
         revision="refs/heads/avium-16" />
 
+<remote name="tmp"
+        fetch="https://codeberg.org/dhao"
+        revision="refs/heads/avium-16" />
+
     <project path="android" name="android_manifests" remote="avium" />
 
     <!-- Bootable -->
@@ -41,6 +45,7 @@
     <project path="packages/apps/AviumSystemUIEX" name="android_packages_apps_AviumSystemUIEX" remote="avium" />
     <project path="packages/apps/BtHelper" name="android_packages_apps_BtHelper" remote="avium" />
     <project path="packages/apps/CatShare" name="android_packages_apps_CatShare" remote="avium" />
+    <project path="packages/apps/DepthWallpaperHelper" name="android_packages_apps_DepthWallpaperHelper" remote="tmp" />
     <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="avium" />
     <project path="packages/apps/Note" name="android_packages_apps_Note" remote="avium" />
     <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" groups="pdk-fs" remote="avium" />
