@@ -61,11 +61,15 @@ TARGET_GOOGLEIME_OVERRIDE_IME := true
 
 AVIUM_MAINTAINER := AVIUM_SHOWHOW
 ```
-and add this in your device tree
+add this in your device tree
 ```
-include device/(product)/(codename)/avium_common.mk
+include device/(product)/(codename)/avium-common.mk
 ```
-
+and add this in your lineage_(codename).mk
+```
+# Inherit Avium build config
+$(call inherit-product, device/(product)/(codename)/avium-common.mk)
+```
 
 ### To Build ###
 
