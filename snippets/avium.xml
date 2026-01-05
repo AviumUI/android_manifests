@@ -5,7 +5,12 @@
         fetch="https://github.com/AviumUI"
         sync-c="true"
         sync-j="4"
+<<<<<<< HEAD   (ecf8381878cbad618b5fa4f052669d3bdb044859 manifest: Untrack more repos)
         revision="refs/heads/avium-16.2" />
+=======
+        revision="refs/heads/avium-16"
+        review="review.aviumui.org" />
+>>>>>>> CHANGE (d03a434767f7750136da90cd3c8dcbf7baed12e6 manifests: Add review url to all AviumUI repositories)
 
     <project path="android" name="android_manifests" remote="avium" />
 
