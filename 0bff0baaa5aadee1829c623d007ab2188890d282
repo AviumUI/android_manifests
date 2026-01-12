@@ -16,6 +16,24 @@
       "message": "Is this caused by the builders using the hw/oplus branch of lineage-23.2?",
       "revId": "0bff0baaa5aadee1829c623d007ab2188890d282",
       "serverId": "8582d5b1-6499-4a2f-9eb8-9aae0e0bb54f"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "32642c29_093ffd56",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2026-01-12T14:38:02Z",
+      "side": 1,
+      "message": "lineage-23.0 also changed it, sorry",
+      "parentUuid": "76ccf88f_0f89a1f5",
+      "revId": "0bff0baaa5aadee1829c623d007ab2188890d282",
+      "serverId": "8582d5b1-6499-4a2f-9eb8-9aae0e0bb54f"
     }
   ]
 }
