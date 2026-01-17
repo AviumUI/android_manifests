@@ -5,7 +5,7 @@
         fetch="https://github.com/AviumUI"
         sync-c="true"
         sync-j="4"
-        revision="refs/heads/avium-16" />
+        revision="refs/heads/avium-16.2" />
 
     <project path="android" name="android_manifests" remote="avium" />
 
