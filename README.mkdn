@@ -21,7 +21,7 @@
 
 ```bash
 # Initialize local repository
-repo init -u https://github.com/AviumUI/android_manifests -b avium-16 --git-lfs
+repo init -u https://github.com/AviumUI/android_manifests -b avium-16.2 --git-lfs
 
 # Sync
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
@@ -74,7 +74,7 @@ include device/(product)/(codename)/avium_common.mk
 . build/envsetup.sh
 
 # Choose a target
-lunch lineage_$device-bp2a-userdebug
+lunch lineage_$device-bp4a-userdebug
 
 # To build
 m bacon -j$(nproc --all)
