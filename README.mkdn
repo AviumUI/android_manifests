@@ -20,52 +20,18 @@
 ### To Sync ###
 
 ```bash
-# Initialize local repository
+# Initialize local repo
 repo init -u https://github.com/AviumUI/android_manifests -b avium-16.2 --git-lfs
 
 # Sync
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 ### To Start ###
-We are fully compatible with the Lineage device tree. You can directly sync the Lineage device applicable to this device. We have some special configs; you can add the mk file "avium-common.mk" to your tree and include it. Below is an introduction to the different attributes of this config.
-```
-AVIUM_BUILDTYPE := Unoffical
-AVIUM_VERSION_APPEND_TIME_OF_DAY := false
+We are fully compatible with the LineageOS device tree. You may directly sync the device-specific repositories from LineageOS.
+We provide several special configurations: you may add the corresponding flags to your lineage_example.mk (or an equivalent Makefile such as device.mk).
 
-# GMS
-WITH_GMS ?= false
-# TARGET_GMS_TYPE has three options: FULL, MINI and PICO
-# If WITH_GMS is true and TARGET_GMS_TYPE is not set, it will default to MINI
-TARGET_GMS_TYPE ?= MINI
-
-# LatinIMEGooglePrebuilt
-# If WITH_GMS is true, TARGET_INCLUDE_GOOGLEIME and TARGET_GOOGLEIME_OVERRIDE_IME will be forced to true
-TARGET_INCLUDE_GOOGLEIME ?= false
-TARGET_GOOGLEIME_OVERRIDE_IME ?= false
-
-# It will display on the Setting-AboutPhone
-AVIUM_MAINTAINER := Your_Name
-```
-Such as
-```
-AVIUM_BUILDTYPE := Unoffical
-AVIUM_VERSION_APPEND_TIME_OF_DAY := false
-
-# GMS
-WITH_GMS := true
-TARGET_GMS_TYPE := MINI
-
-# Google IMS
-TARGET_INCLUDE_GOOGLEIME := true
-TARGET_GOOGLEIME_OVERRIDE_IME := true
-
-AVIUM_MAINTAINER := AVIUM_SHOWHOW
-```
-and add this in your device tree
-```
-include device/(product)/(codename)/avium_common.mk
-```
-
+For detailed configuration information, please refer to [this makefile](https://github.com/AviumUI/android_vendor_avium/blob/avium-16.2/config/avium.mk)
+.
 
 ### To Build ###
 
