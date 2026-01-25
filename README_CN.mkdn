@@ -45,6 +45,12 @@ TARGET_GOOGLEIME_OVERRIDE_IME ?= false
 
 # 此信息将显示在“设置”->“关于手机”中
 AVIUM_MAINTAINER := Your_Name
+
+# Settings
+# Soc model name
+AVIUM_SETTINGS_SOC_MODEL_NAME ?= Unknown
+# Device code name
+AVIUM_SETTINGS_DEVICE_CODENAME ?= Unknown
 ```
 例如：
 ```
@@ -60,6 +66,12 @@ TARGET_INCLUDE_GOOGLEIME := true
 TARGET_GOOGLEIME_OVERRIDE_IME := true
 
 AVIUM_MAINTAINER := AVIUM_SHOWHOW
+
+# Settings
+# Soc model name
+AVIUM_SETTINGS_SOC_MODEL_NAME = sm8150
+# Device code name
+AVIUM_SETTINGS_DEVICE_CODENAME = Pixel4
 ```
 并在您的设备树（device tree）中添加以下内容：
 ```

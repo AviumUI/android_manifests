@@ -45,6 +45,12 @@ TARGET_GOOGLEIME_OVERRIDE_IME ?= false
 
 # It will display on the Setting-AboutPhone
 AVIUM_MAINTAINER := Your_Name
+
+# Settings
+# Soc model name
+AVIUM_SETTINGS_SOC_MODEL_NAME ?= Unknown
+# Device code name
+AVIUM_SETTINGS_DEVICE_CODENAME ?= Unknown
 ```
 Such as
 ```
@@ -60,6 +66,10 @@ TARGET_INCLUDE_GOOGLEIME := true
 TARGET_GOOGLEIME_OVERRIDE_IME := true
 
 AVIUM_MAINTAINER := AVIUM_SHOWHOW
+
+# AboutPhone
+AVIUM_SETTINGS_SOC_MODEL_NAME = sm8150
+AVIUM_SETTINGS_DEVICE_CODENAME = Pixel4
 ```
 and add this in your device tree
 ```
