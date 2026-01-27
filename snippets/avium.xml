@@ -38,6 +38,7 @@
     <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="avium" />
 
     <!-- Packages -->
+    <project path="packages/apps/AviumFreeWindow" name="android_packages_apps_AviumFreeWindow" remote="avium" />
     <project path="packages/apps/AviumSetup" name="packages_apps_AviumSetup" remote="avium" />
     <project path="packages/apps/AviumSystemUIEX" name="android_packages_apps_AviumSystemUIEX" remote="avium" />
     <project path="packages/apps/BtHelper" name="android_packages_apps_BtHelper" remote="avium" />
