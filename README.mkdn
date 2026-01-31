@@ -27,55 +27,47 @@ repo init -u https://github.com/AviumUI/android_manifests -b avium-16.2 --git-lf
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 ### To Start ###
-We are fully compatible with the Lineage device tree. You can directly sync the Lineage device applicable to this device. We have some special configs; you can add the mk file "avium-common.mk" to your tree and include it. Below is an introduction to the different attributes of this config.
+We are fully compatible with the Lineage device tree. You can directly sync the Lineage device applicable to this device. We provide some special configs:
 ```
-AVIUM_BUILDTYPE := Unoffical
-AVIUM_VERSION_APPEND_TIME_OF_DAY := false
-
-# GMS
-WITH_GMS ?= false
-# TARGET_GMS_TYPE has three options: FULL, MINI and PICO
-# If WITH_GMS is true and TARGET_GMS_TYPE is not set, it will default to MINI
-TARGET_GMS_TYPE ?= MINI
-
-# LatinIMEGooglePrebuilt
-# If WITH_GMS is true, TARGET_INCLUDE_GOOGLEIME and TARGET_GOOGLEIME_OVERRIDE_IME will be forced to true
-TARGET_INCLUDE_GOOGLEIME ?= false
-TARGET_GOOGLEIME_OVERRIDE_IME ?= false
-
-# It will display on the Setting-AboutPhone
-AVIUM_MAINTAINER := Your_Name
+# AVIUM_VERSION_APPEND_TIME_OF_DAY is a boolean flag to indicate
+# whether to append time of day to the build date.
+AVIUM_VERSION_APPEND_TIME_OF_DAY ?= false
+# Maintainer
+# AVIUM_MAINTAINER is a string that represents the maintainer of the build.
+AVIUM_MAINTAINER ?= Unknown
 
 # Settings
 # Soc model name
 AVIUM_SETTINGS_SOC_MODEL_NAME ?= Unknown
 # Device code name
 AVIUM_SETTINGS_DEVICE_CODENAME ?= Unknown
-```
-Such as
-```
-AVIUM_BUILDTYPE := Unoffical
-AVIUM_VERSION_APPEND_TIME_OF_DAY := false
 
 # GMS
-WITH_GMS := true
-TARGET_GMS_TYPE := MINI
+# WITH_GMS is a boolean flag to indicate 
+# whether to include Google Mobile Services (GMS) in the build.
+WITH_GMS ?= false
+# Google Sans
+# Enable this to set default fonts to Google Sans.
+# This also works when building vanilla, but you
+# need to sync vendor/pixel/gsans repo.
+TARGET_USES_GSANS := false
+# LatinIMEGooglePrebuilt
+# Only works on vanilla builds,
+# GMS builds will use the Google IME from GMS.
+TARGET_INCLUDE_GOOGLEIME ?= false
+TARGET_GOOGLEIME_OVERRIDE_IME ?= false
 
-# Google IMS
-TARGET_INCLUDE_GOOGLEIME := true
-TARGET_GOOGLEIME_OVERRIDE_IME := true
+# Spoof Props
+# Set to true to enable spoofing fake props.
+# For letting apps think they are running on a locked device.
+AVIUM_FORCE_SET_FAKE_PROP ?= false
 
-AVIUM_MAINTAINER := AVIUM_SHOWHOW
-
-# AboutPhone
-AVIUM_SETTINGS_SOC_MODEL_NAME = sm8150
-AVIUM_SETTINGS_DEVICE_CODENAME = Pixel4
+# Blur Effect
+# The blur usually enabled on Android 16 QPR2.
+# If the blur not enabled, set to true to force enable blur for SystemUI.
+TARGET_FORCE_ENABLE_BLUR ?= false
 ```
-and add this in your device tree
-```
-include device/(product)/(codename)/avium_common.mk
-```
-
+Please add these configs to lineage_xxx.mk, device.mk or equivalent Makefile.
 
 ### To Build ###
 
