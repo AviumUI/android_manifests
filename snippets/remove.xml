@@ -13,6 +13,7 @@
     <remove-project name="LineageOS/android_frameworks_base" />
     <remove-project name="LineageOS/android_frameworks_libs_systemui" />
     <remove-project name="LineageOS/android_frameworks_native" />
+    <remove-project name="LineageOS/android_frameworks_opt_telephony" />
 
     <!-- Packages -->
     <remove-project name="LineageOS/android_packages_apps_Launcher3" />
