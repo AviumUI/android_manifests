@@ -69,9 +69,6 @@
     <!-- System -->
     <project path="system/core" name="android_system_core" groups="pdk" remote="avium" />
 
-    <!-- external -->
-    <project path="external/blurview" name="android_external_blurview" remote="avium" />
-
     <!-- Vendor -->
     <project path="vendor/lineage" name="android_vendor_lineage" remote="avium" />
     <project path="vendor/avium" name="android_vendor_avium" remote="avium" />
