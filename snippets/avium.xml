@@ -46,6 +46,7 @@
     <project path="packages/apps/CatShare" name="android_packages_apps_CatShare" remote="avium" />
     <project path="packages/apps/DepthWallpaperHelper" name="android_packages_apps_DepthWallpaperHelper" remote="avium" />
     <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="avium" />
+    <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="avium" />
     <project path="packages/apps/Note" name="android_packages_apps_Note" remote="avium" />
     <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" groups="pdk-fs" remote="avium" />
     <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc" remote="avium" />
