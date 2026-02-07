@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+    <!-- Art -->
+    <remove-project name="platform/art" />
+
     <!-- Bootable -->
     <remove-project name="LineageOS/android_bootable_recovery" />
 
