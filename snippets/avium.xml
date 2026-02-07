@@ -10,6 +10,9 @@
 
     <project path="android" name="android_manifests" remote="avium" />
 
+    <!-- ART -->
+    <project path="art" name="android_art" remote="avium" />
+
     <!-- Bootable -->
     <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="avium" />
 
