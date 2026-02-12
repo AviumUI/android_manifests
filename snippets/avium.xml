@@ -37,6 +37,9 @@
     <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="avium" />
     <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="avium" />
 
+    <!-- lineage-sdk -->
+    <project path="lineage-sdk" name="android_lineage-sdk" remote="avium" />
+
     <!-- Packages -->
     <project path="packages/apps/AviumSetup" name="android_packages_apps_AviumSetup" remote="avium" />
     <project path="packages/apps/AviumSystemUIEX" name="android_packages_apps_AviumSystemUIEX" remote="avium" />
@@ -71,5 +74,4 @@
     <!-- Vendor -->
     <project path="vendor/lineage" name="android_vendor_lineage" remote="avium" />
     <project path="vendor/avium" name="android_vendor_avium" remote="avium" />
-
 </manifest>
