@@ -41,6 +41,9 @@
     <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="avium" />
     <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk,sysui-studio" remote="avium" />
 
+    <!-- lineage-sdk -->
+    <project path="lineage-sdk" name="android_lineage-sdk" remote="avium" />
+
     <!-- Packages -->
     <project path="packages/apps/AviumFreeWindow" name="android_packages_apps_AviumFreeWindow" remote="avium" />
     <project path="packages/apps/AviumSetup" name="packages_apps_AviumSetup" remote="avium" />
@@ -76,5 +79,4 @@
     <!-- Vendor -->
     <project path="vendor/lineage" name="android_vendor_lineage" remote="avium" />
     <project path="vendor/avium" name="android_vendor_avium" remote="avium" />
-
 </manifest>
