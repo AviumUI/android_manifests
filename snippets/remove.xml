@@ -18,6 +18,10 @@
     <remove-project name="LineageOS/android_frameworks_native" />
     <remove-project name="LineageOS/android_frameworks_opt_telephony" />
 
+    <!--Hardware-->
+    <remove-project name="LineageOS/android_hardware_lineage_compat" />
+
+
     <!-- Packages -->
     <remove-project name="LineageOS/android_packages_apps_Launcher3" />
     <remove-project name="LineageOS/android_packages_apps_Messaging" />

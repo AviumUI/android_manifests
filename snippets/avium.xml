@@ -41,6 +41,9 @@
     <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="avium" />
     <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk,sysui-studio" remote="avium" />
 
+    <!--Hardware-->
+    <project path="hardware/lineage/compat" name="android_hardware_lineage_compat"  remote="avium"/>
+
     <!-- lineage-sdk -->
     <project path="lineage-sdk" name="android_lineage-sdk" remote="avium" />
 
