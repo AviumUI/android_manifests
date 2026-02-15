@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "53bb3031_7e885f2b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000008
+      },
+      "writtenOn": "2026-02-15T14:20:35Z",
+      "side": 1,
+      "message": "This commit has been useless, I\u0027m shimed blob in device tree \nSo this commit can be abandon()",
+      "revId": "d4cadcdbba208a277dc2510ec50841b561f92f08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
