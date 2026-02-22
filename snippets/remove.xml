@@ -27,5 +27,6 @@
 
     <!-- System -->
     <remove-project name="LineageOS/android_system_core"/>
+    <remote-project name="LineageOS/android_system_sepolicy" />
 
 </manifest>
