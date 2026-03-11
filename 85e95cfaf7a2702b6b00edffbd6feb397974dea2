@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "074eb345_b6a2ec01",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000001
+      },
+      "writtenOn": "2026-03-11T16:00:10Z",
+      "side": 1,
+      "message": "Source: https://github.com/uwu-gl/android_vendor_avium-prebuilts.git",
+      "revId": "85e95cfaf7a2702b6b00edffbd6feb397974dea2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
