@@ -81,4 +81,5 @@
     <!-- Vendor -->
     <project path="vendor/lineage" name="android_vendor_lineage" remote="avium" />
     <project path="vendor/avium" name="android_vendor_avium" remote="avium" />
+    <project path="vendor/pixel/gsans" name="proprietary_vendor_pixel_gsans" remote="avium" />
 </manifest>
