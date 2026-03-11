@@ -41,9 +41,6 @@ AVIUM_SETTINGS_DEVICE_CODENAME ?= Unknown
 
 # 选择是否开启gms
 WITH_GMS ?= false
-# 将此配置设为true来将 Google Sans 设为系统默认字体
-# 这在非gms版本上也可用，但您需要同步vendor/pixel/gsans
-TARGET_USES_GSANS := false
 # LatinIMEGooglePrebuilt
 # 仅在构建非gms版本时起作用
 # 在gms版本上会使用gms中的Gboard
