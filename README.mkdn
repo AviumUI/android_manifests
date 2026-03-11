@@ -46,11 +46,6 @@ AVIUM_SETTINGS_DEVICE_CODENAME ?= Unknown
 # WITH_GMS is a boolean flag to indicate 
 # whether to include Google Mobile Services (GMS) in the build.
 WITH_GMS ?= false
-# Google Sans
-# Enable this to set default fonts to Google Sans.
-# This also works when building vanilla, but you
-# need to sync vendor/pixel/gsans repo.
-TARGET_USES_GSANS := false
 # LatinIMEGooglePrebuilt
 # Only works on vanilla builds,
 # GMS builds will use the Google IME from GMS.
