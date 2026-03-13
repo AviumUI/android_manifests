@@ -72,7 +72,6 @@
     <project path="packages/apps/AviumLyricBarCore" name="android_packages_apps_AviumLyricBarCore" remote="avium" />
     <project path="packages/apps/ColumbusService" name="android_packages_apps_ColumbusService" remote="avium" />
     <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="avium" />
-    <project path="packages/modules/adb" name="android_packages_modules_adb" remote="avium" />
     <project path="packages/overlays/Lineage" name="android_packages_overlays_Lineage" remote="avium" />
 
     <!-- System -->
