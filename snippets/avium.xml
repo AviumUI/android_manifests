@@ -81,6 +81,7 @@
 
     <!-- System -->
     <project path="system/core" name="android_system_core" groups="pdk" remote="avium" />
+    <project path="system/security" name="android_system_security" groups="pdk" remote="avium" />
     <project path="system/sepolicy" name="android_system_sepolicy" remote="avium" />
 
     <!-- Vendor -->
