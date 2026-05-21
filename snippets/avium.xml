@@ -41,6 +41,10 @@
     <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="avium" />
     <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk,sysui-studio" remote="avium" />
 
+    <!-- Hardware -->
+    <project path="hardware/qcom-caf/sm8750/display/core" name="android_vendor_qcom_opensource_display-core" groups="qcom" revision="avium-16.2-caf-sm8750" remote="avium" />
+    <project path="hardware/qcom-caf/sm8750/display/hal" name="android_hardware_qcom_display" groups="qcom" revision="avium-16.2-caf-sm8750" remote="avium" />
+
     <!-- lineage-sdk -->
     <project path="lineage-sdk" name="android_lineage-sdk" remote="avium" />
 
