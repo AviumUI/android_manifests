@@ -26,5 +26,6 @@
 
     <!-- System -->
     <remove-project name="LineageOS/android_system_core"/>
+    <remove-project name="LineageOS/android_system_security" />
 
 </manifest>
