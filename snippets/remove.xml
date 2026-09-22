@@ -23,9 +23,11 @@
     <remove-project name="LineageOS/android_packages_apps_Messaging" />
     <remove-project name="LineageOS/android_packages_apps_Settings" />
     <remove-project name="LineageOS/android_packages_modules_Nfc" />
+    <remove-project name="LineageOS/android_packages_modules_Connectivity" />
 
     <!-- System -->
     <remove-project name="LineageOS/android_system_core"/>
+    <remove-project name="LineageOS/android_system_netd"/>
     <remove-project name="LineageOS/android_system_security" />
 
 </manifest>
